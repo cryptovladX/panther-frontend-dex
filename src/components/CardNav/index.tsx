@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { ButtonMenu, ButtonMenuItem } from '@pantherswap-libs/uikit'
 import TranslatedText from '../TranslatedText'
-import * as logo from './assests/icon.jpg';
+import * as logo from './favicon.png';
 
 const img = logo.default;
 
