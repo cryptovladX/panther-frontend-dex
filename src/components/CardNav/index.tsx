@@ -3,11 +3,14 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { ButtonMenu, ButtonMenuItem } from '@pantherswap-libs/uikit'
 import TranslatedText from '../TranslatedText'
+import imageLogo from './path-to-image'
+
 
 const StyledNav = styled.div`
   margin-bottom: 40px;
 `
-<div class="logo">mylogohere</div>
+
+<img class="wally" src={imageLogo} height={100} width={100} />
 
 const Nav = ({ activeIndex = 0 }: { activeIndex?: number }) => (
   <StyledNav>
@@ -17,6 +20,15 @@ const Nav = ({ activeIndex = 0 }: { activeIndex?: number }) => (
       </ButtonMenuItem>
       <ButtonMenuItem id="pool-nav-link" to="/pool" as={Link}>
         <TranslatedText translationId={74}>Liquidity</TranslatedText>
+      </ButtonMenuItem>
+      <ButtonMenuItem
+        id="pool-nav-link-ziege"
+        as="a"
+        href="https://www.binance.org/en/bridge?utm_source=PantherSwap"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        Bridge
       </ButtonMenuItem>
     </ButtonMenu>
   </StyledNav>
