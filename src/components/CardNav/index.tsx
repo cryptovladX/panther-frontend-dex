@@ -10,7 +10,7 @@ const StyledNav = styled.div`
   margin-bottom: 40px;
 `
 
-<img class="wally" src={imageLogo} height={100} width={100} />
+<img src={imageLogo} height={100} width={100} />
 
 const Nav = ({ activeIndex = 0 }: { activeIndex?: number }) => (
   <StyledNav>
