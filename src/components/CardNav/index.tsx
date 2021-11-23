@@ -9,16 +9,9 @@ import imageLogo from './path-to-image'
 const StyledNav = styled.div`
   margin-bottom: 40px;
 `
-const LogoNav = styled.div`
-  margin-bottom: 60px;
-`
-
-
 
 const Nav = ({ activeIndex = 0 }: { activeIndex?: number }) => (
   
-<LogodNav>
-</LogoNav>
   
   <StyledNav>
     <ButtonMenu activeIndex={activeIndex} size="sm" variant="subtle">
