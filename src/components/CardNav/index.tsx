@@ -9,10 +9,17 @@ import imageLogo from './path-to-image'
 const StyledNav = styled.div`
   margin-bottom: 40px;
 `
+const LogoNav = styled.div`
+  margin-bottom: 60px;
+`
 
-<img src={imageLogo} height={100} width={100} />
+
 
 const Nav = ({ activeIndex = 0 }: { activeIndex?: number }) => (
+  
+<LogodNav>
+</LogoNav>
+  
   <StyledNav>
     <ButtonMenu activeIndex={activeIndex} size="sm" variant="subtle">
       <ButtonMenuItem id="swap-nav-link" to="/swap" as={Link}>
