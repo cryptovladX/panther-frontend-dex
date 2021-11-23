@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom'
 import { ButtonMenu, ButtonMenuItem } from '@pantherswap-libs/uikit'
 import TranslatedText from '../TranslatedText'
 
+const StyledNav = styled.div`
+  margin-bottom: 40px;
+`
+
 const Nav = ({ activeIndex = 0 }: { activeIndex?: number }) => (
-  
   <StyledNav>
     <ButtonMenu activeIndex={activeIndex} size="sm" variant="subtle">
       <ButtonMenuItem id="swap-nav-link" to="/swap" as={Link}>
@@ -15,7 +18,7 @@ const Nav = ({ activeIndex = 0 }: { activeIndex?: number }) => (
         <TranslatedText translationId={74}>Liquidity</TranslatedText>
       </ButtonMenuItem>
       <ButtonMenuItem
-        id="pool-nav-link-ziege"
+        id="pool-nav-link"
         as="a"
         href="https://www.binance.org/en/bridge?utm_source=PantherSwap"
         target="_blank"
