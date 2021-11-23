@@ -3,12 +3,13 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { ButtonMenu, ButtonMenuItem } from '@pantherswap-libs/uikit'
 import TranslatedText from '../TranslatedText'
+import { View, Image, StyleSheet } from 'react-native'
 
 const StyledNav = styled.div`
   margin-bottom: 40px;
 `
 
-import { View, Image, StyleSheet } from 'react-native';
+
 
 const styles = StyleSheet.create({
   container: {
