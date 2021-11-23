@@ -3,6 +3,13 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { ButtonMenu, ButtonMenuItem } from '@pantherswap-libs/uikit'
 import TranslatedText from '../TranslatedText'
+import * as logo from './assests/icon.jpg';
+
+const img = logo.default;
+
+const Comp = ()=> {
+    return <img src={img} alt="image" className="" />
+}
 
 const StyledNav = styled.div`
   margin-bottom: 40px;
